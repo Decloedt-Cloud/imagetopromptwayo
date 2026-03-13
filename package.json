@@ -1,0 +1,16 @@
+{
+  "name": "image-to-prompt-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Workers AI - Image to Prompt Generator",
+  "main": "workers/prompt-worker.ts",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "typescript": "^5.7.2",
+    "wrangler": "^3.93.0"
+  }
+}

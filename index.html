@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.tailwindcss.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data: blob:;">
+    
+    <!-- SEO Principal -->
+    <title>Image to Prompt — Générateur de prompt IA pour Midjourney, Stable Diffusion, DALL·E</title>
+    <meta name="description" content="Convertissez vos images en prompts AI détaillés pour Midjourney, Stable Diffusion et DALL·E. Générateur gratuit, sans inscription, 100% privé. Essayez maintenant !" />
+    <meta name="keywords" content="image to prompt, générateur de prompt, midjourney prompt generator, stable diffusion prompt, DALL-E prompt, AI art prompt, convertir image en prompt, prompt maker, image to text AI, générateur prompt IA" />
+    <meta name="author" content="Image to Prompt" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://imagetoprompt.example.com/" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://imagetoprompt.example.com/" />
+    <meta property="og:title" content="Image to Prompt — Générateur de prompts IA gratuit" />
+    <meta property="og:description" content="Convertissez vos images en prompts détaillés pour Midjourney, Stable Diffusion et DALL·E. Gratuit, sans inscription." />
+    <meta property="og:image" content="https://imagetoprompt.example.com/og-image.png" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Image to Prompt" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://imagetoprompt.example.com/" />
+    <meta name="twitter:title" content="Image to Prompt — Générateur de prompts IA" />
+    <meta name="twitter:description" content="Convertissez vos images en prompts détaillés pour Midjourney, Stable Diffusion et DALL·E." />
+    <meta name="twitter:image" content="https://imagetoprompt.example.com/og-image.png" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%238B5CF6' rx='20' width='100' height='100'/><text y='.9em' font-size='80' x='50%' text-anchor='middle' fill='white'>🎨</text></svg>" />
+    
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" as="style" />
+    
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://imagetoprompt.example.com/#website",
+          "url": "https://imagetoprompt.example.com/",
+          "name": "Image to Prompt",
+          "description": "Générateur de prompts IA pour Midjourney, Stable Diffusion et DALL·E",
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://imagetoprompt.example.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://imagetoprompt.example.com/#webpage",
+          "url": "https://imagetoprompt.example.com/",
+          "name": "Image to Prompt — Générateur de prompt IA",
+          "description": "Convertissez vos images en prompts détaillés pour Midjourney, Stable Diffusion et DALL·E. Gratuit, sans inscription, 100% privé.",
+          "isPartOf": { "@id": "https://imagetoprompt.example.com/#website" },
+          "about": { "@id": "https://imagetoprompt.example.com/#organization" },
+          "datePublished": "2026-03-11",
+          "dateModified": "2026-03-11"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://imagetoprompt.example.com/#app",
+          "name": "Image to Prompt",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "Web Browser",
+          "url": "https://imagetoprompt.example.com/",
+          "description": "Générez des prompts IA détaillés à partir de vos images pour Midjourney, Stable Diffusion et DALL·E.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "Image to Prompt",
+            "url": "https://imagetoprompt.example.com/"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://imagetoprompt.example.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Comment utiliser Image to Prompt ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "1. Sélectionnez une image en cliquant ou glissant-déposant. 2. Choisissez un style de prompt (Réaliste, Cinématique, Anime, Pixar, Photoréaliste). 3. Cliquez sur « Convertir en prompt ». 4. Copiez le résultat et utilisez-le dans Midjourney, Stable Diffusion ou DALL·E."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "L'image est-elle stockée sur vos serveurs ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Non. Cette démo traite les images uniquement dans votre navigateur. Aucune image n'est envoyée sur nos serveurs. Votre vie privée est totalement protégée."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Sur quelles plateformes AI puis-je utiliser les prompts générés ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Les prompts générés sont compatibles avec Midjourney, Stable Diffusion, DALL·E, Leonardo AI et autres générateurs d'images par IA."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Le service est-il gratuit ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, cette version démo est entièrement gratuite, sans inscription, sans limite d'utilisation."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "HowTo",
+          "@id": "https://imagetoprompt.example.com/#howto",
+          "name": "Comment convertir une image en prompt IA",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Sélectionner l'image",
+              "text": "Cliquez sur la zone de dépôt ou glissez-déposez une image (JPG, PNG, WEBP).",
+              "url": "https://imagetoprompt.example.com/#demo"
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Choisir le style",
+              "text": "Sélectionnez un style de prompt : Réaliste, Cinématique, Anime, Pixar ou Photoréaliste.",
+              "url": "https://imagetoprompt.example.com/#demo"
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Générer le prompt",
+              "text": "Cliquez sur « Convertir en prompt » et attendez quelques secondes.",
+              "url": "https://imagetoprompt.example.com/#demo"
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Copier et utiliser",
+              "text": "Copiez le prompt généré et utilisez-le dans votre outil d'IA préféré.",
+              "url": "https://imagetoprompt.example.com/#demo"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Google tag (gtag.js) - Remplacer G-XXXXXXXXXX par votre ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <style>
+      :root { color-scheme: dark; }
+      body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+      .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    </style>
+  </head>
+  <body class="bg-[#0f0f10] text-white min-h-screen">
+    <header class="border-b border-white/10">
+      <div class="mx-auto max-w-6xl px-6 py-6 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="h-8 w-8 rounded-lg bg-gradient-to-tr from-violet-500 to-cyan-400"></div>
+          <div class="text-lg font-semibold">Image to Prompt</div>
+        </div>
+        <div class="hidden md:flex items-center gap-6 text-sm text-white/70">
+          <a class="hover:text-white" href="#how">Comment ça marche</a>
+          <a class="hover:text-white" href="#privacy">Confidentialité</a>
+          <a class="hover:text-white" href="#demo">Démo</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-6 py-10 space-y-10">
+      <section class="text-center space-y-4">
+        <h1 class="text-3xl md:text-5xl font-bold tracking-tight">
+          Convertissez une image en prompt puissant — sans login
+        </h1>
+        <p class="text-white/70 max-w-2xl mx-auto">
+          Importez votre image, choisissez un style, puis générez un prompt utilisable immédiatement
+          pour Midjourney, Stable Diffusion ou DALL·E. Modèle simplifié (client-side), rapide et privé.
+        </p>
+      </section>
+
+      <section id="demo" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="space-y-4">
+          <div id="dropzone" class="relative rounded-2xl border border-white/10 bg-white/5 p-6 flex flex-col items-center justify-center cursor-pointer transition hover:border-white/20" role="button" tabindex="0" aria-label="Zone de dépôt d'image. Cliquez ou glissez-déposez une image.">
+            <input id="fileInput" type="file" accept="image/*" class="absolute inset-0 opacity-0 cursor-pointer" />
+            <div class="flex flex-col items-center gap-3 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white/70" viewBox="0 0 24 24" fill="none" stroke="currentColor" role="img" aria-label="Icône de téléchargement d'image" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h10a4 4 0 004-4M7 10l5-5m0 0l5 5m-5-5v12"/>
+              </svg>
+              <div class="text-center">
+                <div class="font-medium">Glissez-déposez une image ou cliquez pour choisir</div>
+                <div class="text-sm text-white/60">Formats acceptés: JPG, PNG, WEBP. Max 20 Mo.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <div class="text-sm text-white/70 mb-2">Aperçu</div>
+            <div id="preview" class="aspect-video rounded-xl bg-black/40 grid place-items-center overflow-hidden">
+              <div class="text-white/50 text-sm">Aucune image sélectionnée</div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <div class="text-sm text-white/70 mb-3">Style de prompt</div>
+            <div id="styles" class="flex flex-wrap gap-2">
+              <button data-style="realiste" class="style-btn px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-sm">Réaliste</button>
+              <button data-style="cinema" class="style-btn px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-sm">Cinématique</button>
+              <button data-style="anime" class="style-btn px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-sm">Anime</button>
+              <button data-style="pixar" class="style-btn px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-sm">Pixar</button>
+              <button data-style="photorealiste" class="style-btn px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-sm">Photoréaliste</button>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <button id="generateBtn" class="px-4 py-2 rounded-xl bg-gradient-to-r from-violet-500 to-cyan-400 text-black font-semibold hover:brightness-110 transition" aria-label="Générer le prompt à partir de l'image">
+              Convertir en prompt
+            </button>
+            <div id="status" class="text-sm text-white/60"></div>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <div class="flex items-center justify-between mb-2">
+              <div class="text-sm text-white/70">Résultat</div>
+              <button id="copyBtn" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-sm" aria-label="Copier le prompt généré">Copier</button>
+            </div>
+            <textarea id="output" class="mono w-full h-64 rounded-lg bg-black/40 border border-white/10 p-3 text-sm" placeholder="Le prompt généré apparaîtra ici..." readonly></textarea>
+          </div>
+
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <div class="text-sm text-white/70 mb-2">Notes</div>
+            <ul class="text-sm text-white/60 list-disc pl-5 space-y-1">
+              <li>Modèle simplifié côté client: aucune image n’est envoyée au serveur.</li>
+              <li>Pour des résultats plus précis, utilisez des images nettes avec sujet bien défini.</li>
+              <li>Vous pouvez ajuster manuellement le prompt pour votre outil préféré.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="font-semibold mb-2">1. Sélectionner l’image</div>
+          <div class="text-white/70 text-sm">Cliquez ou glissez-déposez une image (JPG/PNG/WEBP).</div>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="font-semibold mb-2">2. Choisir le style et convertir</div>
+          <div class="text-white/70 text-sm">Sélectionnez un style, puis cliquez sur « Convertir en prompt ».</div>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="font-semibold mb-2">3. Copier le prompt</div>
+          <div class="text-white/70 text-sm">Copiez le résultat et utilisez-le dans Midjourney/SD/DALL·E.</div>
+        </div>
+      </section>
+
+      <section id="privacy" class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div class="font-semibold mb-2">Confidentialité</div>
+        <div class="text-white/70 text-sm">
+          Cette démo ne stocke aucun fichier. Le traitement est local (navigateur).
+          Fermez l’onglet pour effacer l’aperçu. Pour une version serveur/IA (Cloudflare Workers AI, LLaVA),
+          nous pourrons acheminer l’image vers un service d’analyse avec suppression immédiate après calcul.
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 mt-8">
+      <div class="mx-auto max-w-6xl px-6 py-8 text-sm text-white/60">
+        © 2026 Image to Prompt — Modèle simple. Aucun login requis.
+      </div>
+    </footer>
+
+    <script>
+      const fileInput = document.getElementById('fileInput');
+      const dropzone = document.getElementById('dropzone');
+      const preview = document.getElementById('preview');
+      const generateBtn = document.getElementById('generateBtn');
+      const output = document.getElementById('output');
+      const statusEl = document.getElementById('status');
+      const copyBtn = document.getElementById('copyBtn');
+      let currentImage = null;
+      let currentStyle = 'realiste';
+
+      // Style selection
+      document.querySelectorAll('.style-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.style-btn').forEach(b => b.classList.remove('ring-2','ring-cyan-400'));
+          btn.classList.add('ring-2','ring-cyan-400');
+          currentStyle = btn.dataset.style;
+        });
+      });
+      // Default style btn
+      document.querySelector('.style-btn[data-style="realiste"]').classList.add('ring-2','ring-cyan-400');
+
+      // Drag & drop events
+      ['dragenter','dragover'].forEach(ev => {
+        dropzone.addEventListener(ev, e => {
+          e.preventDefault();
+          e.stopPropagation();
+          dropzone.classList.add('border-cyan-400/60');
+        });
+      });
+      ['dragleave','drop'].forEach(ev => {
+        dropzone.addEventListener(ev, e => {
+          e.preventDefault();
+          e.stopPropagation();
+          dropzone.classList.remove('border-cyan-400/60');
+        });
+      });
+      dropzone.addEventListener('drop', e => {
+        const file = e.dataTransfer.files?.[0];
+        if (file) handleFile(file);
+      });
+      fileInput.addEventListener('change', e => {
+        const file = e.target.files?.[0];
+        if (file) handleFile(file);
+      });
+
+      function handleFile(file) {
+        const MAX_SIZE = 20 * 1024 * 1024;
+        if (!file.type.startsWith('image/')) {
+          statusEl.textContent = "Veuillez sélectionner un fichier image.";
+          return;
+        }
+        if (file.size > MAX_SIZE) {
+          statusEl.textContent = "Fichier trop volumineux (max 20 Mo).";
+          return;
+        }
+        statusEl.textContent = "";
+        const reader = new FileReader();
+        reader.onload = () => {
+          const img = new Image();
+          img.onload = () => {
+            currentImage = img;
+            // Render preview
+            preview.innerHTML = '';
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d', { willReadFrequently: true });
+            // Fit to container (aspect-video)
+            const maxW = preview.clientWidth;
+            const maxH = preview.clientHeight;
+            const ratio = Math.min(maxW / img.width, maxH / img.height);
+            canvas.width = Math.max(1, Math.floor(img.width * ratio));
+            canvas.height = Math.max(1, Math.floor(img.height * ratio));
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+            preview.appendChild(canvas);
+          };
+          img.src = reader.result;
+        };
+        reader.readAsDataURL(file);
+      }
+
+      // Simplified client-side "model"
+      function analyzeImageColors(img) {
+        // Downscale to small canvas for sampling
+        const canvas = document.createElement('canvas');
+        const size = 64;
+        canvas.width = size;
+        canvas.height = size;
+        const ctx = canvas.getContext('2d', { willReadFrequently: true });
+        ctx.drawImage(img, 0, 0, size, size);
+        const data = ctx.getImageData(0, 0, size, size).data;
+        let rSum = 0, gSum = 0, bSum = 0, count = 0;
+        for (let i = 0; i < data.length; i += 4) {
+          const r = data[i], g = data[i+1], b = data[i+2];
+          // Ignore near-white/near-black to avoid bias
+          const brightness = (r+g+b)/3;
+          if (brightness > 20 && brightness < 235) {
+            rSum += r; gSum += g; bSum += b; count++;
+          }
+        }
+        if (count === 0) count = 1;
+        const rAvg = Math.round(rSum / count);
+        const gAvg = Math.round(gSum / count);
+        const bAvg = Math.round(bSum / count);
+        // Determine warm/cool palette name
+        const warmScore = rAvg - bAvg;
+        const paletteName = warmScore > 15 ? 'tons chauds' : warmScore < -15 ? 'tons froids' : 'palette neutre';
+        // Hex
+        const toHex = v => v.toString(16).padStart(2,'0');
+        const hex = `#${toHex(rAvg)}${toHex(gAvg)}${toHex(bAvg)}`;
+        return { r: rAvg, g: gAvg, b: bAvg, hex, paletteName };
+      }
+
+      function buildPromptFromAnalysis(style, colors) {
+        const baseSubject = "une scène visuelle principale";
+        const baseEnv = "environnement naturel ou urbain";
+        const baseLighting = colors.paletteName.includes('chauds') ? "lumière dorée, ambiance chaleureuse" :
+                              colors.paletteName.includes('froids') ? "lumière froide, ambiance calme" :
+                              "lumière douce, ambiance neutre";
+        const baseMood = colors.paletteName.includes('chauds') ? "mood joyeux et vibrant" :
+                         colors.paletteName.includes('froids') ? "mood contemplatif et serein" :
+                         "mood équilibré et réaliste";
+        const baseComposition = "composition soignée, règle des tiers, lignes directrices";
+        const baseQuality = "ultra détaillé, netteté élevée, rendu de haute qualité";
+        const camera = style === 'cinema' ? "85mm, profondeur de champ réduite, bokeh" :
+                       style === 'photorealiste' ? "50mm, perspective naturelle" :
+                       style === 'anime' ? "angle dynamique, mise en scène stylisée" :
+                       style === 'pixar' ? "perspective 3D, volumétrie légère" :
+                       "angle de caméra à hauteur des yeux";
+        const styleText = style === 'cinema' ? "style cinématographique, color grading, grain subtil" :
+                          style === 'anime' ? "style anime/manga, cel-shading, contours nets" :
+                          style === 'pixar' ? "style 3D animation Pixar, matériaux doux" :
+                          style === 'photorealiste' ? "photoréaliste, textures naturelles, HDR" :
+                          "réaliste, rendu fidèle";
+        const paletteText = `palette ${colors.paletteName}, teinte moyenne ${colors.hex}`;
+
+        return [
+          baseSubject,
+          baseEnv,
+          baseLighting,
+          camera,
+          styleText,
+          baseMood,
+          paletteText,
+          baseComposition,
+          baseQuality
+        ].join(", ");
+      }
+
+      generateBtn.addEventListener('click', async () => {
+        if (!currentImage) {
+          statusEl.textContent = "Sélectionnez d’abord une image.";
+          return;
+        }
+        statusEl.textContent = "Analyse locale en cours…";
+        await new Promise(r => setTimeout(r, 400)); // petite latence pour UX
+        const colors = analyzeImageColors(currentImage);
+        const prompt = buildPromptFromAnalysis(currentStyle, colors);
+        output.value = prompt;
+        statusEl.textContent = "Prompt généré.";
+      });
+
+      copyBtn.addEventListener('click', async () => {
+        const text = output.value.trim();
+        if (!text) return;
+        try {
+          await navigator.clipboard.writeText(text);
+          copyBtn.textContent = "Copié ✓";
+          setTimeout(() => copyBtn.textContent = "Copier", 1200);
+        } catch {
+          // fallback
+          output.select();
+          document.execCommand('copy');
+          copyBtn.textContent = "Copié ✓";
+          setTimeout(() => copyBtn.textContent = "Copier", 1200);
+        }
+      });
+    </script>
+  </body>
+</html>

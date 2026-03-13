@@ -1,0 +1,46 @@
+# robots.txt pour Image to Prompt
+# https://imagetoprompt.example.com/
+
+User-agent: *
+Allow: /
+
+# Chemins à ne pas indexer
+Disallow: /api/
+Disallow: /assets/js/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Sitemap
+Sitemap: https://imagetoprompt.example.com/sitemap.xml
+
+# Crawl-delay (optionnel, pour éviter de surcharger le serveur)
+Crawl-delay: 1
+
+# Directives Googlebot
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Googlebot-News
+Allow: /
+User-agent: Mediapartners-Google
+Allow: /
+
+# Autres robots utiles
+User-agent: Bingbot
+Allow: /
+User-agent: Slurp
+Allow: /
+User-agent: DuckDuckBot
+Allow: /
+User-agent: Baiduspider
+Allow: /
+User-agent: YandexBot
+Allow: /
+
+# Empêcher l'indexation des pages de demo/beta
+User-agent: *
+Disallow: /demo/
+Disallow: /beta/
+Disallow: /test/
