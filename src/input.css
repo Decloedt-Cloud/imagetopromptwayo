@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.mono {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.hero {
+    padding: 4rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@theme {
+  --color-brand: #f47a1f;
+  --color-brand-dark: #F06423;
+  --color-brand-light: #fde8d0;
+  --color-main: #ffffff;
+  --color-primary: #09090b;
+  --color-muted: #71717a;
+  --color-borderline: #e4e4e7;
+  --color-surface: #fafaf9;
+  --color-border-custom: #e2ddd8;
+  --color-heading: #1a1a1a;
+  --color-muted: #6b7280;
+  --color-card: #ffffff;
+}
