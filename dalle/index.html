@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -164,32 +164,6 @@
      <script async src="https://www.googletagmanager.com/gtag/js?id=G-393YFPLXQ3"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-393YFPLXQ3'); 
      </script>
 
-     <script> const path = window.location.pathname;
-  const map = {
-    '/midjourney/':       'Midjourney',
-    '/stable-diffusion/': 'Stable Diffusion',
-    '/dalle/':            'DALL·E',
-  };
-
-  if (map[path]) {
-    // Update trigger text
-    document.getElementById('dd-trigger').childNodes[0].textContent = map[path] + ' ';
-
-    // Highlight active item
-    document.querySelectorAll('#dd-menu a').forEach(a => {
-      if (a.getAttribute('href') === path) {
-        a.classList.add('bg-brand-light');
-        a.classList.remove('hover:bg-surface');
-        a.querySelector('.dd-icon').classList.replace('bg-surface', 'bg-brand');
-        a.querySelector('.dd-svg').classList.replace('text-muted', 'text-white');
-        a.querySelector('.dd-label').classList.replace('text-primary', 'text-brand');
-      }
-    });
-  }
-  </script>
-
-    
-    
     
   </head>
   <body class="min-h-screen bg-surface">
@@ -289,7 +263,7 @@
     </div>
   </div>
 
-</header>
+    </header>
 
   
 
@@ -300,7 +274,7 @@
 </h1>
         </h1>
         <p class="text-muted max-w-2xl mx-auto">
-          The ultimate <strong class="text-primary">Image to Prompt</strong> tool. Upload your image, choose a style, and generate a prompt usable for Midjourney, Stable Diffusion, or DALL·E. Simplified model (client-side), fast and private.
+          The ultimate <strong class="text-primary">Image to Prompt</strong> tool. Upload your image, choose a style, and generate a prompt usable for DALL·E. Simplified model (client-side), fast and private.
 
         </p>
 
@@ -526,6 +500,6 @@
       </div>
     </footer>
 
-    <script type="module" src="/js/main.js"></script>
+   <script type="module" src="/js/main.js"></script>
   </body>
 </html>
