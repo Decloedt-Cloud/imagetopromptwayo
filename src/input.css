@@ -86,6 +86,18 @@ body {
             padding: 20px;
             min-height: 50vh;
         }
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .wayo-banner-wrapper .wayo-banner{
+            border-radius: 24px;
+            }
+        }
+        @media (max-width: 600px) {
+            .wayo-banner-wrapper .wayo-banner{
+            border-radius: 24px;
+        }
+        }
+        
 
         .wayo-banner {
             display: flex;
@@ -631,6 +643,7 @@ body {
                 flex-direction: column;
                 text-align: center;
                 padding: 40px 30px;
+                border-radius: 24px;
             }
             .ad-content {
                 max-width: 100%;
@@ -650,7 +663,7 @@ body {
         }
 
         @media (max-width: 600px) {
-            .wayo-ad-banner { padding: 40px 20px; border-radius: 0; }
+            .wayo-ad-banner { padding: 40px 20px; border-radius: 24px; }
             .ad-title { font-size: 1.8rem; }
             .dashboard-card { width: 100%; max-width: 320px; }
         }

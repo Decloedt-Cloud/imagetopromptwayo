@@ -1,171 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data: blob:;">
-    
-    <!-- SEO Principal -->
-    <title>Image to Prompt — Générateur de prompt IA pour Midjourney, Stable Diffusion, DALL·E</title>
-    <meta name="description" content="Convertissez vos images en prompts AI détaillés pour Midjourney, Stable Diffusion et DALL·E. Générateur gratuit, sans inscription, 100% privé. Essayez maintenant !" />
-    <meta name="keywords" content="image to prompt, générateur de prompt, midjourney prompt generator, stable diffusion prompt, DALL-E prompt, AI art prompt, convertir image en prompt, prompt maker, image to text AI, générateur prompt IA" />
-    <meta name="author" content="Image to Prompt" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://imagetoprompt.example.com/" />
-    
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://imagetoprompt.example.com/" />
-    <meta property="og:title" content="Image to Prompt — Générateur de prompts IA gratuit" />
-    <meta property="og:description" content="Convertissez vos images en prompts détaillés pour Midjourney, Stable Diffusion et DALL·E. Gratuit, sans inscription." />
-    <meta property="og:image" content="https://imagetoprompt.example.com/og-image.png" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:site_name" content="Image to Prompt" />
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://imagetoprompt.example.com/" />
-    <meta name="twitter:title" content="Image to Prompt — Générateur de prompts IA" />
-    <meta name="twitter:description" content="Convertissez vos images en prompts détaillés pour Midjourney, Stable Diffusion et DALL·E." />
-    <meta name="twitter:image" content="https://imagetoprompt.example.com/og-image.png" />
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%238B5CF6' rx='20' width='100' height='100'/><text y='.9em' font-size='80' x='50%' text-anchor='middle' fill='white'>🎨</text></svg>" />
-    
-    <!-- Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" as="style" />
-    
-    <link rel="stylesheet" href="/output.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://imagetoprompt.example.com/#website",
-          "url": "https://imagetoprompt.example.com/",
-          "name": "Image to Prompt",
-          "description": "Générateur de prompts IA pour Midjourney, Stable Diffusion et DALL·E",
-          "publisher": {
-            "@type": "Organization",
-            "@id": "https://imagetoprompt.example.com/#organization"
-          }
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://imagetoprompt.example.com/#webpage",
-          "url": "https://imagetoprompt.example.com/",
-          "name": "Image to Prompt — Générateur de prompt IA",
-          "description": "Convertissez vos images en prompts détaillés pour Midjourney, Stable Diffusion et DALL·E. Gratuit, sans inscription, 100% privé.",
-          "isPartOf": { "@id": "https://imagetoprompt.example.com/#website" },
-          "about": { "@id": "https://imagetoprompt.example.com/#organization" },
-          "datePublished": "2026-03-11",
-          "dateModified": "2026-03-11"
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://imagetoprompt.example.com/#app",
-          "name": "Image to Prompt",
-          "applicationCategory": "UtilitiesApplication",
-          "operatingSystem": "Web Browser",
-          "url": "https://imagetoprompt.example.com/",
-          "description": "Générez des prompts IA détaillés à partir de vos images pour Midjourney, Stable Diffusion et DALL·E.",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "EUR"
-          },
-          "author": {
-            "@type": "Organization",
-            "name": "Image to Prompt",
-            "url": "https://imagetoprompt.example.com/"
-          }
-        },
-        {
-          "@type": "FAQPage",
-          "@id": "https://imagetoprompt.example.com/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Comment utiliser Image to Prompt ?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "1. Sélectionnez une image en cliquant ou glissant-déposant. 2. Choisissez un style de prompt (Réaliste, Cinématique, Anime, Pixar, Photoréaliste). 3. Cliquez sur « Convertir en prompt ». 4. Copiez le résultat et utilisez-le dans Midjourney, Stable Diffusion ou DALL·E."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "L'image est-elle stockée sur vos serveurs ?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Non. Cette démo traite les images uniquement dans votre navigateur. Aucune image n'est envoyée sur nos serveurs. Votre vie privée est totalement protégée."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Sur quelles plateformes AI puis-je utiliser les prompts générés ?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Les prompts générés sont compatibles avec Midjourney, Stable Diffusion, DALL·E, Leonardo AI et autres générateurs d'images par IA."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Le service est-il gratuit ?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Oui, cette version démo est entièrement gratuite, sans inscription, sans limite d'utilisation."
-              }
-            }
-          ]
-        },
-        {
-          "@type": "HowTo",
-          "@id": "https://imagetoprompt.example.com/#howto",
-          "name": "Comment convertir une image en prompt IA",
-          "step": [
-            {
-              "@type": "HowToStep",
-              "name": "Sélectionner l'image",
-              "text": "Cliquez sur la zone de dépôt ou glissez-déposez une image (JPG, PNG, WEBP).",
-              "url": "https://imagetoprompt.example.com/#demo"
-            },
-            {
-              "@type": "HowToStep",
-              "name": "Choisir le style",
-              "text": "Sélectionnez un style de prompt : Réaliste, Cinématique, Anime, Pixar ou Photoréaliste.",
-              "url": "https://imagetoprompt.example.com/#demo"
-            },
-            {
-              "@type": "HowToStep",
-              "name": "Générer le prompt",
-              "text": "Cliquez sur « Convertir en prompt » et attendez quelques secondes.",
-              "url": "https://imagetoprompt.example.com/#demo"
-            },
-            {
-              "@type": "HowToStep",
-              "name": "Copier et utiliser",
-              "text": "Copiez le prompt généré et utilisez-le dans votre outil d'IA préféré.",
-              "url": "https://imagetoprompt.example.com/#demo"
-            }
-          ]
-        }
-      ]
-    }
-    </script>
-    
-    
-    <!-- Google tag (gtag.js) --> 
-     <script async src="https://www.googletagmanager.com/gtag/js?id=G-393YFPLXQ3"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-393YFPLXQ3'); 
-     </script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    
-  </head>
+<!-- SEO -->
+<title>DALL·E Prompt Generator (Free) – Convert Image to AI Prompt</title>
+
+<meta name="description" content="Generate optimized DALL·E prompts from any image. Free AI tool, no login required. Create detailed prompts instantly for better AI-generated images." />
+
+<link rel="canonical" href="https://imagepromptpro.com/dalle/" />
+
+<meta name="robots" content="index, follow" />
+
+<!-- Performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/output.css">
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" />
+
+<!-- Schema SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "DALL·E Prompt Generator",
+  "url": "https://imagepromptpro.com/dalle/",
+  "description": "Convert images into optimized DALL·E prompts using AI.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Image Prompt Pro",
+    "url": "https://imagepromptpro.com/"
+  }
+}
+</script>
+
+<!-- Google Analytics (USE SAME ID EVERYWHERE) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3T2Y9GHR8B"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-3T2Y9GHR8B');
+</script>
+
+</head>
   <body class="min-h-screen bg-surface">
     
     <header class="border-b border-borderline bg-main">
@@ -274,7 +157,7 @@
 </h1>
         </h1>
         <p class="text-muted max-w-2xl mx-auto">
-          The ultimate <strong class="text-primary">Image to Prompt</strong> tool. Upload your image, choose a style, and generate a prompt usable for DALL·E. Simplified model (client-side), fast and private.
+          The ultimate <strong class="text-primary">Image to Prompt</strong> tool. Upload your image, choose a style, and generate a prompt usable for <strong class="text-primary">DALL·E</strong> . Simplified model (client-side), fast and private.
 
         </p>
 
